@@ -107,10 +107,14 @@ If prompted to create a keystore, do so. This keystore will exist only in AEM an
 In the user's keystore console, click **[!UICONTROL Add Private Key form KeyStore file]** and add the following information:
 
 * **[!UICONTROL New Alias]**: the key's alias in AEM. This can be anything and does not have to correspond with the name of the keystore created with the openssl command.
-* **[!UICONTROL Keystore File]**: the output of the openssl pkcs12 command (keystore.p12)
-* **[!UICONTROL Private Key Alias]**: The password set in the openssl pkcs12 command via `-  passout` argument. 
+* **[!UICONTROL KeyStore File]**: the output of the openssl pkcs12 command (keystore.p12)
+* **[!UICONTROL KeyStore File Password]**: The password set in the openssl pkcs12 command via `-passout` argument.
+* **[!UICONTROL Private Key Alias]**: The name provided by the `-name` argument in step 2 above (i.e. `my-key`)
+* **[!UICONTROL Private Key Password]**: The password set in the openssl pkcs12 command via `-passout` argument.
 
-* **[!UICONTROL Private Key Password]**: The password set in the openssl pkcs12 command via `-  passout` argument.
+>[!CAUTION]
+>
+>The KeyStore File Password and Private Key Password is the same for both inputs. Entering a mismatched password will result in the key not being imported.
 
 ### Verify the private key is loaded into the AEM keystore {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
