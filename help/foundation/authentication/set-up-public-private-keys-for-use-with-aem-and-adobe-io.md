@@ -109,7 +109,7 @@ In the user's keystore console, click **[!UICONTROL Add Private Key form KeyStor
 * **[!UICONTROL New Alias]**: the key's alias in AEM. This can be anything and does not have to correspond with the name of the keystore created with the openssl command.
 * **[!UICONTROL KeyStore File]**: the output of the openssl pkcs12 command (keystore.p12)
 * **[!UICONTROL KeyStore File Password]**: The password set in the openssl pkcs12 command via `-passout` argument.
-* **[!UICONTROL Private Key Alias]**: The name provided by the `-name` argument in the pkcs12 step above (i.e. `my-key`)
+* **[!UICONTROL Private Key Alias]**: The value provided to the `-name` argument in the openssl pkcs12 command above (i.e. `my-key`).
 * **[!UICONTROL Private Key Password]**: The password set in the openssl pkcs12 command via `-passout` argument.
 
 >[!CAUTION]
